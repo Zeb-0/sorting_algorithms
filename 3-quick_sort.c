@@ -38,7 +38,6 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 			}
 			above++;
 		}
-		/**above++;*/
 	}
 
 	if (array[above] > *pivot)
@@ -57,7 +56,6 @@ int lomuto_partition(int *array, size_t size, int left, int right)
  * @size: The size of the array.
  * @left: The starting index of the array partition to order.
  * @right: The ending index of the array partition to order.
- *
  * Description: Uses the Lomuto partition scheme.
  */
 void lomuto_sort(int *array, size_t size, int left, int right)
@@ -74,12 +72,11 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 
 /**
  * quick_sort - Sort an array of integers in ascending
- *              order using the quicksort algorithm.
+ * order using the quicksort algorithm.
  * @array: An array of integers.
  * @size: The size of the array.
- *
  * Description: Uses the Lomuto partition scheme. Prints
- *              the array after each swap of two elements.
+ * the array after each swap of two elements.
  */
 void quick_sort(int *array, size_t size)
 {
